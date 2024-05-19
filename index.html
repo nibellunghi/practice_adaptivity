@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="title" content="Adaptive Website Layout">
+    <meta name="description" content="Learning how to use meta tags">
+    <meta name="image" content="img/meta/Meta.png">
+    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Practice 2 </title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="hello">
+            <img class="hello__background" src="/img/hello/background.png" alt="">
+            <div class="container">
+
+                <div class="hello__navigation">
+                    <div class="hello__menu" id="menu">
+                        <a href="#about_us" class="hello__link">About us</a>
+                        <span class="hello__decor">.</span>
+                        <a href="#work" class="hello__link">Work</a>
+
+                        <img src="/img/icons/Logo.svg" alt="" class="hello__logo">
+
+                        <a href="#shop" class="hello__link">Shop</a>
+                        <span class="hello__decor">.</span>
+                        <a href="#contact" class="hello__link">Contact</a>
+                    </div>
+
+
+
+                    <div class="burger" onclick="myFunction()">
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="description" id="about_us">
+                <div class="container">
+                    <div class="description__body">
+                        <div class="description__icon icon">
+                            <img src="/img/icons/IconDescription.svg" alt="">
+                        </div>
+                        <div class="description__title title">
+                            A NEW GENERATION OF VINTAGE BIKE
+                        </div>
+                        <div class="description__text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only
+                            five
+                            centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="images" id="work">
+
+                <div class="images__grid">
+                    <div class="images__item images__item_wide">
+                        <img class="images__large" src="/img/content/Large1.png" alt="">
+                        <img class="images__logo" src="/img/icons/Logo1.svg" alt="">
+                    </div>
+                    <div class="images__description">
+                        <img src="/img/icons/Icon1.svg" alt="" class="images__icon icon">
+                        <div class="images__title title">
+                            VINTAGE OLIVA
+                        </div>
+                        <div class="images__text text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                It has survived.</p>
+                        </div>
+                        <div class="arrow-down"></div>
+                        <div class="images__small"><img src="/img/content/Small1.png" alt=""></div>
+                    </div>
+
+
+
+                    <div class="images__description">
+                        <img src="/img/icons/Icon2.svg" alt="" class="images__icon icon">
+                        <div class="images__title title">
+                            La Boriosa
+                        </div>
+                        <div class="images__text text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived.</p>
+                        </div>
+                        <div class="arrow-down"></div>
+                        <div class="images__small"><img src="/img/content/Small2.png" alt=""></div>
+                    </div>
+                    <div class="images__item images__item_wide">
+                        <img class="images__large" src="/img/content/Large2.png" alt="">
+                        <img class="images__logo" src="/img/icons/Logo2.svg" alt="">
+                    </div>
+
+
+
+                    <div class="images__item images__item_vertical">
+                        <img class="images__large" src="/img/content/Large3.png" alt="">
+                        <img class="images__logo" src="/img/icons/Logo3.svg" alt="">
+                    </div>
+                    <div class="images__description images__description_last">
+                        <img src="/img/icons/Icon3.svg" alt="" class="images__icon icon">
+                        <div class="images__title title">
+                            retrò Bike - M. Hulot
+                        </div>
+                        <div class="images__text text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                It has survived.</p>
+                        </div>
+                        <div class="arrow-down"></div>
+                        <div class="images__small"><img src="/img/content/Small3.png" alt=""></div>
+                    </div>
+                    <div class="images__item images__item_vertical">
+                        <img class="images__large" src="/img/content/Large4.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="comments">
+                <div class="container">
+                    <div class="comments__body">
+                        <div class="comments__column">
+                            <div class="comments__icon">
+                                <img src="/img/icons/TwitterIcon.svg" alt="">
+                            </div>
+                            <div class="comments__title">
+                                AOD New York @aod <span> / 35 min</span>
+                            </div>
+                            <div class="comments__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper
+                                rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+
+                            </div>
+                            <div class="comments__buttons">
+                                <a href="" onclick="return false;"></a>
+                                <a href="" onclick="return false;"></a>
+                                <a href="" onclick="return false;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shop" id="shop">
+                <div class="shop__row">
+                    <div class="shop__item">
+                        <div class="shop__link">
+                            <a href="" onclick="return false;">
+                                <img class="shop__image" src="/img/Shop/Shop1.png" alt="">
+                                <div class="rollover">
+                                    <img class="rollover__icon" src="/img/icons/ShopIcon.svg" alt="">
+                                    <span class="rollover__caption">Shop now</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shop__link">
+                            <a href="" onclick="return false;">
+                                <img class="shop__image" src="/img/Shop/Shop2.png" alt="">
+                                <div class="rollover">
+                                    <img class="rollover__icon" src="/img/icons/ShopIcon.svg" alt="">
+                                    <span class="rollover__caption">Shop now</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shop__link shop__link_wide">
+                            <a href="" onclick="return false;">
+                                <img class="shop__image" src="/img/Shop/Shop3.png" alt="">
+                                <div class="rollover">
+                                    <img class="rollover__icon" src="/img/icons/ShopIcon.svg" alt="">
+                                    <span class="rollover__caption">Shop now</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__link">
+                            <a href="" onclick="return false;">
+                                <img class="shop__image" src="/img/Shop/Shop4.png" alt="">
+                                <div class="rollover">
+                                    <img class="rollover__icon" src="/img/icons/ShopIcon.svg" alt="">
+                                    <span class="rollover__caption">Shop now</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shop__link">
+                            <a href="" onclick="return false;">
+                                <img class="shop__image" src="/img/Shop/Shop5.png" alt="">
+                                <div class="rollover">
+                                    <img class="rollover__icon" src="/img/icons/ShopIcon.svg" alt="">
+                                    <span class="rollover__caption">Shop now</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__link shop__link_wide">
+                            <a href="" onclick="return false;">
+                                <img class="shop__image" src="/img/Shop/Shop6.png" alt="">
+                                <div class="rollover">
+                                    <img class="rollover__icon" src="/img/icons/ShopIcon.svg" alt="">
+                                    <span class="rollover__caption">Shop now</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shop__link">
+                            <a href="" onclick="return false;">
+                                <img class="shop__image" src="/img/Shop/Shop7.png" alt="">
+                                <div class="rollover">
+                                    <img class="rollover__icon" src="/img/icons/ShopIcon.svg" alt="">
+                                    <span class="rollover__caption">Shop now</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shop__link">
+                            <a href="" onclick="return false;">
+                                <img class="shop__image" src="/img/Shop/Shop8.png" alt="">
+                                <div class="rollover">
+                                    <img class="rollover__icon" src="/img/icons/ShopIcon.svg" alt="">
+                                    <span class="rollover__caption">Shop now</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <div class="container">
+                    <div class="button__body">
+                        <a href="" onclick="return false;" class="button__btn">Discover the shop</a>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback" id="contact">
+                <div class="container">
+                    <div class="feedback__body">
+                        <div class="feedback__box">
+                            <div class="feedback__logo">
+                                <img src="/img/icons/Logo.svg" alt="">
+                            </div>
+                            <div class="feedback__title">
+                                Stay on the saddle!
+                            </div>
+                            <div class="feedback__form">
+                                <input class="feedback__email" type="text" placeholder="enter your email...">
+                                <a class="feedback__submit" href="" onclick="return false;">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__body">
+                    <div class="footer__text">
+                        <div class="footer__org">
+                            AOD New York
+                        </div>
+                        <div class="footer__address">
+                            <p>2250 Lexington Avenue</p>
+                            <p>New York, NY 10035 - info@domain.com</p>
+                        </div>
+                    </div>
+                    <div class="footer__links">
+                        <a class="footer__link" href="" onclick="return false;">
+                            <img src="/img/icons/twitter.svg" alt="">
+                        </a>
+
+                        <a class="footer__link" href="" onclick="return false;">
+                            <img src="/img/icons/Facebook.svg" alt="">
+                        </a>
+                        <a class="footer__link" href="" onclick="return false;">
+                            <img src="/img/icons/Pinterest.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer__logo">
+                        Handcrafted by
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/js/burger.js"></script>
+</body>
+
+</html>
