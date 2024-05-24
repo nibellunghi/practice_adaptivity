@@ -152,10 +152,6 @@ body {
             display: flex;
             margin-left: 30px;
 
-            &__line {
-                background-color: #64c29e;
-            }
-
         }
 
 
@@ -178,18 +174,32 @@ body {
 
 .burger {
     display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    transition: all 0.8s ease 0s;
+    transform-style: preserve-3d;
 
-    &__line {
+
+    &__flip-front,
+    &__flip-back {
+        position: absolute;
         width: 100%;
-        height: 3px;
-        background-color: #4d4959;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
 
+    &__flip-front {
+        z-index: 2;
+        transform: rotateY(0deg);
+        background: #282f35;
+        backface-visibility: hidden;
+    }
+
+    &__flip-back {
+        transform: rotateY(-180deg);
+    }
 }
 
 .content {
