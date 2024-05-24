@@ -172,7 +172,7 @@ body {
     position: fixed;
     min-height: 110px;
     z-index: 3;
-    background: url('./img/icons/Logo.svg') 50% no-repeat, #282f35;
+    background: url('../img/icons/Logo.svg') 50% no-repeat, #282f35;
     opacity: 0.95;
   }
   .hello__menu {
@@ -803,7 +803,7 @@ body {
 }
 .footer__logo::after {
   content: " ";
-  background: url("./img/icons/LogoFooter.svg") right no-repeat;
+  background: url("../img/icons/LogoFooter.svg") right no-repeat;
   padding: 10px 0 10px 65px;
 }
 
