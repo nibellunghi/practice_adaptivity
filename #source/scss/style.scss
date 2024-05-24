@@ -42,8 +42,6 @@ body {
 }
 
 .hello {
-    // background: url('/img/hello/background.png') 50% 100%/cover no-repeat;
-    // flex: 1 1 800px;
 
     &__background {
         position: relative;
@@ -81,6 +79,12 @@ body {
 
     }
 
+    &__logo {
+        &_mobile {
+            display: none;
+        }
+    }
+
     &__decor {
         color: #4d4959;
     }
@@ -88,9 +92,6 @@ body {
 
 @media (max-width: 967px) {
 
-    // .hello {
-    //     background: url('/img/hello/backgroundSmall.jpg') 50% 100%/cover no-repeat;
-    // }
 
     .hello {
         &__background {
@@ -107,7 +108,7 @@ body {
             position: fixed;
             min-height: 110px;
             z-index: 3;
-            background: url(/img/icons/Logo.svg) 50% no-repeat, #282f35;
+            background: #282f35;
             opacity: 0.95;
 
 
@@ -125,9 +126,20 @@ body {
 
         }
 
-        &__logo,
         &__decor {
             display: none;
+        }
+
+        &__logo {
+            display: none;
+
+            &_mobile {
+                display: flex;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
 
         &__link {
@@ -396,24 +408,6 @@ body {
 
 }
 
-
-
-
-
-
-
-
-
-// @media (max-width: 967px) {
-
-//     .images {
-//         &__row {
-//             display: flex;
-//             flex-direction: column;
-//         }
-//     }
-// }
-
 .arrow-down {
     position: relative;
     margin: 0 auto -10px auto;
@@ -556,30 +550,6 @@ body {
         margin: 10% auto;
     }
 }
-
-// @media (max-width: 1607px) {
-
-//     .shop {
-
-//         &__item {
-//             flex: 1 1 33.333%;
-//         }
-
-//         &__image {
-//             flex: 0 0 50%;
-
-//             &_wide {
-//                 flex: 0 0 100%;
-//             }
-//         }
-
-//         &__image img {
-//             max-width: 100%;
-//         }
-
-//     }
-
-// }
 
 @media (max-width: 625px) {
 
@@ -773,7 +743,7 @@ body {
 
         &::after {
             content: ' ';
-            background: url('/img/icons/LogoFooter.svg') right no-repeat;
+            background: url('../img/icons/LogoFooter.svg') right no-repeat;
             padding: 10px 0 10px 65px;
         }
     }

@@ -156,6 +156,9 @@ body {
   color: #4d4959;
   font-weight: 700;
 }
+.hello__logo_mobile {
+  display: none;
+}
 .hello__decor {
   color: #4d4959;
 }
@@ -172,7 +175,7 @@ body {
     position: fixed;
     min-height: 110px;
     z-index: 3;
-    background: url('../img/icons/Logo.svg') 50% no-repeat, #282f35;
+    background: #282f35;
     opacity: 0.95;
   }
   .hello__menu {
@@ -188,8 +191,21 @@ body {
     position: absolute;
     top: 100%;
   }
-  .hello__logo, .hello__decor {
+  .hello__decor {
     display: none;
+  }
+  .hello__logo {
+    display: none;
+  }
+  .hello__logo_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   .hello__link {
     -webkit-animation: link 200ms linear 1 normal 0s forwards;
